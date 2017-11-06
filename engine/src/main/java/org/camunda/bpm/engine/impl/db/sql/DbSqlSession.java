@@ -125,11 +125,11 @@ public class DbSqlSession extends AbstractPersistenceSession {
     // Id using the DbIdGenerator while performing a deployment.
     if (!DbSqlSessionFactory.H2.equals(dbSqlSessionFactory.getDatabaseType())) {
       String mappedStatement = dbSqlSessionFactory.mapStatement(statement);
-      if (!Context.getProcessEngineConfiguration().isJdbcBatchProcessing()) {
+//      if (!Context.getProcessEngineConfiguration().isJdbcBatchProcessing()) {
         sqlSession.update(mappedStatement, parameter);
-      } else {
-        sqlSession.selectList(mappedStatement, parameter);
-      }
+//      } else {
+//        sqlSession.selectList(mappedStatement, parameter);
+//      }
     }
   }
 
