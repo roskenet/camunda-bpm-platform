@@ -37,7 +37,7 @@ public class PersistenceExceptionTest {
   @Test
   public void testPersistenceExceptionContainsRealCause() {
     StringBuffer longString = new StringBuffer();
-    for (int i = 0; i < 100; i++) {
+    for (int i = 0; i < 500; i++) {
       longString.append("tensymbols");
     }
     final BpmnModelInstance modelInstance = Bpmn.createExecutableProcess("process1").startEvent().userTask(longString.toString()).endEvent().done();
