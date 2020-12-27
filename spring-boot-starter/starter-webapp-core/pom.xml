@@ -12,7 +12,7 @@
   <name>camunda BPM - Spring Boot Starter - Webapps Core</name>
 
   <properties>
-    <powermock.version>2.0.2</powermock.version>
+    <powermock.version>2.0.9</powermock.version>
   </properties>
 
   <dependencies>
