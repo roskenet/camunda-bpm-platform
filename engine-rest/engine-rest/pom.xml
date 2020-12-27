@@ -16,7 +16,7 @@
     <version.tomcat>7.0.50</version.tomcat>
     <rest.http.port>38080</rest.http.port>
     <!-- use inherited version as default -->
-    <resteasy.version>${version.resteasy}</resteasy.version>
+    <resteasy.version>3.14.0.Final</resteasy.version>
     <resteasy.netty.version>2.3.6.Final</resteasy.netty.version>
     <!-- other JAX-RS implementations -->
     <wink.version>1.1.1-incubating</wink.version>
